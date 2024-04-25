@@ -1,0 +1,494 @@
+.master-slider {
+  position: relative;
+  //visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0)
+}
+
+.master-slider.ms-fullheight {
+  height: 100%
+}
+
+.master-slider img {
+  max-width: none
+}
+
+.ms-ie img {
+  border: none
+}
+
+.ms-ie8 * {
+  opacity: inherit;
+  filter: inherit
+}
+
+.ms-ie7 {
+  zoom: 1
+}
+
+.ms-loading-container {
+  position: absolute;
+  top: 0;
+  width: 100%
+}
+
+.ms-loading-container .ms-loading, .ms-slide .ms-slide-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px;
+  background: url(~@/assets/images/assets/loader.svg) no-repeat center #fff;
+  background-size: 40px;
+  border-radius: 60px
+}
+
+.ms-def-cursor {
+  cursor: auto !important
+}
+
+.ms-grab-cursor {
+  cursor: url(~@/assets/images/assets/grab.png), move
+}
+
+.ms-grabbing-cursor {
+  cursor: url(~@/assets/images/assets/grabbing.png), move
+}
+
+.ms-ie .ms-grab-cursor {
+  cursor: url(~@/assets/images/assets/grab.cur), move
+}
+
+.ms-ie .ms-grabbing-cursor {
+  cursor: url(~@/assets/images/assets/grabbing.cur), move
+}
+
+.ms-view {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  background: 0 0;
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -ms-perspective: 2000px;
+  perspective: 2000px
+}
+
+.ms-view .ms-slide-container {
+  position: relative
+}
+
+.ms-slide {
+  position: absolute;
+  height: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d
+}
+
+.ms-container {
+  position: relative;
+  margin: 0 auto
+}
+
+.ms-container, .ms-slide .ms-slide-bgcont img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.ms-slide .ms-layer {
+  position: absolute
+}
+
+.ms-layer h1, .ms-layer h2, .ms-layer h3, .ms-layer h4, .ms-layer h5, .ms-layer h6 {
+  line-height: 1.5em
+}
+
+.ms-slide .ms-slide-layers {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(0, 0, 0, .3);
+  z-index: 10
+}
+
+.ms-mask-frame {
+  position: absolute;
+  float: left;
+  overflow: hidden
+}
+
+.ms-bullet {
+  cursor: pointer
+}
+
+.ms-sbar .ms-bar {
+  position: relative;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s
+}
+
+.ms-time-bar {
+  -webkit-transition: width 120ms linear;
+  -moz-transition: width 120ms linear;
+  -ms-transition: width 120ms linear;
+  -o-transition: width 120ms linear;
+  transition: width 120ms linear
+}
+
+.ms-ie7 .ms-tooltip-arrow {
+  height: 0
+}
+
+.ms-nav-next:hover, .ms-nav-prev:hover {
+  background-color: #088fa9
+}
+
+.ms-nav-next {
+  left: auto;
+  right: 30px;
+  background-position: -88px -106px
+}
+
+.ms-bullets.ms-dir-h {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: auto !important
+}
+
+.ms-bullets.ms-dir-h .ms-bullets-count {
+  position: relative
+}
+
+.ms-bullet {
+  display: inline-block;
+  vertical-align: middle;
+  width: 5px;
+  height: 5px;
+  margin: 0 15px !important;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+
+.ms-bullet-selected {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: 2px solid #fff
+}
+
+.ms-sbar {
+  position: absolute
+}
+
+.ms-sbar.ms-dir-h {
+  top: 5px;
+  left: 10px;
+  right: 10px
+}
+
+.ms-sbar.ms-dir-v {
+  top: 10px;
+  bottom: 10px;
+  right: 5px
+}
+
+.ms-sbar .ms-bar {
+  height: 4px;
+  background: #d0f;
+  border-radius: 4px
+}
+
+.ms-sbar.ms-dir-v .ms-bar {
+  width: 4px
+}
+
+.ms-timerbar {
+  position: absolute;
+  bottom: 0;
+  width: 100%
+}
+
+.ms-time-bar {
+  height: 3px;
+  background: #000
+}
+
+.ms-ctimer {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer
+}
+
+.ms-tooltip {
+  position: absolute;
+  cursor: auto;
+  z-index: 110
+}
+
+.ms-tooltip-bottom .ms-tooltip-arrow, .ms-tooltip-top .ms-tooltip-arrow {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  border-left: solid 10px transparent;
+  border-right: solid 10px transparent
+}
+
+.ms-tooltip-top .ms-tooltip-arrow {
+  bottom: -10px;
+  border-top: solid 10px;
+  border-top-color: silver;
+  border-top-color: rgba(240, 240, 240, .88)
+}
+
+.ms-tooltip-bottom .ms-tooltip-arrow {
+  top: -10px;
+  border-bottom: solid 10px;
+  border-bottom-color: silver;
+  border-bottom-color: rgba(240, 240, 240, .88)
+}
+
+.ms-tooltip-left .ms-tooltip-arrow, .ms-tooltip-right .ms-tooltip-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  border-top: solid 10px transparent;
+  border-bottom: solid 10px transparent
+}
+
+.ms-tooltip-right .ms-tooltip-arrow {
+  left: -10px;
+  border-right: solid 10px;
+  border-right-color: silver;
+  border-right-color: rgba(240, 240, 240, .88)
+}
+
+.ms-tooltip-left .ms-tooltip-arrow {
+  right: -10px;
+  border-left: solid 10px;
+  border-left-color: silver;
+  border-left-color: rgba(240, 240, 240, .88)
+}
+
+@keyframes point-anim {
+  0% {
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(.5);
+    -o-transform: scale(.5);
+    -ms-transform: scale(.5);
+    opacity: 1
+  }
+  100% {
+    transform: scale(.5);
+    -webkit-transform: scale(.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes point-anim {
+  0% {
+    -webkit-transform: scale(.5);
+    opacity: 1
+  }
+  100% {
+    -webkit-transform: scale(1.5);
+    opacity: 0
+  }
+}
+
+.ms-tooltip-point {
+  cursor: pointer
+}
+
+.ms-tooltip-point .ms-point-center {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: -8px 0 0 -8px;
+  background: #fff;
+  border-radius: 15px;
+  border: solid 2px #bbb;
+  z-index: 5
+}
+
+.ms-tooltip-point .ms-point-border {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  margin: -11px 0 0 -11px;
+  background: rgba(0, 0, 0, .36);
+  border-radius: 15px;
+  -webkit-animation: point-anim 1.5s infinite;
+  -moz-animation: point-anim 1.5s infinite;
+  animation: point-anim 1.5s infinite
+}
+
+.ms-tooltip-point .ms-point-border {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none
+}
+
+.ms-tooltip-point .ms-point-border {
+  display: none
+}
+
+.ms-tooltip {
+  max-width: 200px
+}
+
+.ms-tooltip-cont {
+  text-shadow: 0 1px 0 #fff;
+  padding: 10px;
+  background: rgba(240, 240, 240, .88);
+  -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .04);
+  -moz-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .04);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .04)
+}
+
+.ms-partialview-template {
+  direction: ltr;
+  overflow: hidden;
+  min-height: 500px;
+  text-align: center
+}
+
+.ms-partialview-template .ms-view {
+  overflow: visible;
+  background-color: transparent
+}
+
+.ms-partialview-template .ms-caro3d-template {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 40px 15%
+}
+
+.ms-partialview-template .ms-slide-info {
+  direction: rtl;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background-color: #3e474f
+}
+
+.ms-partialview-template img {
+  border-radius: 4px
+}
+
+.ms-inner-controls-cont {
+  margin: auto
+}
+
+.carousel__track {
+  width: 1903px;
+  height: 826.616px;
+}
+
+.slide-wrapper {
+  cursor: grab;
+  transition: 4s all;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 100%;
+    height: 1070.44px !important;
+    margin-top: -121.5px;
+    margin-left: 0;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  .layer {
+    top: 178.885px;
+    margin: 0;
+    line-height: 18.8318px;
+    right: 99.1146px;
+    min-width: 440px;
+    font-size: 13px !important;
+    padding: 30px 30px 10px 50px !important;
+    background-color: rgba(255, 255, 255, .94);
+    position: absolute;
+    text-align: right;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -25px;
+      right: 0;
+      width: calc(100% - 40px);
+      height: 25px;
+      background-color: inherit;
+      border-bottom: 4px solid #ffc107;
+    }
+
+    .banner-logo {
+      position: absolute;
+      width: 100px;
+      height: 100px !important;
+      top: 16px;
+      left: 16px;
+      margin: 0;
+      object-fit: contain;
+    }
+  }
+}
+
+.carousel__pagination {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  width: auto !important;
+  align-items: center;
+
+  button {
+    min-width: unset;
+    display: inline-block;
+    vertical-align: middle;
+    width: 5px;
+    height: 5px;
+    margin: 0 15px !important;
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    padding: 0;
+
+    &:after {
+      content: none;
+    }
+
+    &.carousel__pagination-button--active {
+      width: 10px;
+      height: 10px;
+      background-color: transparent;
+      border: 2px solid #fff;
+    }
+  }
+}
